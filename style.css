@@ -2,18 +2,18 @@
 
 *
 {
-    margin: 0;
-    padding: 0;
     font-family: 'raleway';
     font-size: 16px;
+    box-sizing: border-box;
+    padding: 0;
 }
 
 
 .wrapper
 {
-    max-width: 1340px;
+    max-width: 1340px;    
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0;
 }
 
 ul
@@ -26,7 +26,8 @@ a
     text-decoration: none;
 }
 
-.NavLink:visited {
+.NavLink:visited
+{
     text-decoration: none;
     color: #000000;
 }
@@ -34,33 +35,36 @@ a
 /* header */
 header
 {
-    height: 200px;
+    margin-top: 30px;
 }
 
 .logo
 {
+    display: flex;
+    flex-wrap: wrap;
     width: 100px;
     float: left;
-    margin-top: 40px;
+    clear: both;
 }
 
 nav
 {
     float: right;
-    margin-top: 40px;
 }
 
 nav ul li
 {
-    display: inline-block;
-    margin-right: 52px;
+    
+    display: inline-block;    
     color: black;
+    text-decoration: none;
+    margin-right: 65px;
 }
 
 .NavLink[data-active=true] 
 {
     color: #0065FC;
-    padding-top: 52px;
+    padding-top: 58px;
     border-top: 3px solid #0065FC;
     line-height: 48px;
 }
@@ -68,9 +72,9 @@ nav ul li
 .NavLink:hover 
 {
     color: #0065FC;
-    padding-top: 52px;
+    padding-top: 58px;
     border-top: 3px solid #0065FC;
-    line-height: 48px;
+    line-height: 48px;   
 }
 
 .Signup
@@ -81,7 +85,112 @@ nav ul li
 
 .Signup:hover
 {
-    padding-top: 52px;
     border-top: 3px solid #0065FC;
+    padding-top: 58px;
     line-height: 48px;  
 }
+
+/* search */
+
+
+.searchHeader
+{
+    clear: both;
+     padding-bottom: 10px;
+}
+
+.searchHeaderTitle
+{
+    font-size: 22px;
+}
+
+.searchHeaderDescription
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.iconSearch
+{
+    float: left;
+    height: 50px;
+    width: 50px;
+    background-color: #F2F2F2;
+    border-right: none;
+    padding: 1rem 1.25rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+form.searchBar input[type=text] 
+{
+    padding-top: 1px;
+    padding-right: 0%;    
+    height: 50px;
+    max-width: 420px;
+    font-size: 17px;
+    border: 1px solid rgb(250, 250, 250);
+    float: left;
+    background: #ffffff;
+    font-weight: bold;
+}
+
+
+.submit
+{
+    float: left;
+    height: 50px;
+    width: 140px;
+    background: #0065FC;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-left: none; /* Prevent double borders */
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+ /* filtre */
+.Filters
+{
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.FilterTitle
+{
+   margin: 100px;
+}
+
+ .searchFilter
+ {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    font-weight: bold;
+ }
+
+ .iconSearchFilter
+ {
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    min-height: 35px;
+    min-width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+ }
+
