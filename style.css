@@ -1,0 +1,87 @@
+/* général */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'raleway';
+    font-size: 16px;
+}
+
+
+.wrapper
+{
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+ul
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.NavLink:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* header */
+header
+{
+    height: 200px;
+}
+
+.logo
+{
+    width: 100px;
+    float: left;
+    margin-top: 40px;
+}
+
+nav
+{
+    float: right;
+    margin-top: 40px;
+}
+
+nav ul li
+{
+    display: inline-block;
+    margin-right: 52px;
+    color: black;
+}
+
+.NavLink[data-active=true] 
+{
+    color: #0065FC;
+    padding-top: 52px;
+    border-top: 3px solid #0065FC;
+    line-height: 48px;
+}
+
+.NavLink:hover 
+{
+    color: #0065FC;
+    padding-top: 52px;
+    border-top: 3px solid #0065FC;
+    line-height: 48px;
+}
+
+.Signup
+{
+    color: #0065FC;
+    font-weight: bold;
+}
+
+.Signup:hover
+{
+    padding-top: 52px;
+    border-top: 3px solid #0065FC;
+    line-height: 48px;  
+}
