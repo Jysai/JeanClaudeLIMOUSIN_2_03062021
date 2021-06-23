@@ -12,8 +12,8 @@
 
     <body>
         <script src="https://kit.fontawesome.com/d2186745d7.js" crossorigin="anonymous"></script>
-        <header>
-            <div class="wrapper">
+        <div class="wrapper">
+            <header>
                 <img class="logo" src="logo\Reservia.png" alt="Reservia">
                 <nav>
                     <ul>
@@ -21,18 +21,19 @@
                         <li><a class="NavLink" a href="#activity" data-active="false">Activités</a></li>
                         <li><a class="Signup" href="#">S'inscrire</a></li>
                     </ul>
-                <nav>
-                
-            </div>
-        </header>
+                <nav>               
+            </header>
+        </div>
 
         <section id="search">
             <div class="wrapper">
-                <header class="searchHeader">
+                <p class="descriptionHeader">
                     <h1 class="searchHeaderTitle">Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p class="searchHeaderDescription">En plein centre ville ou en pleine nature</p>
-                </header>
+                </p>
+            </div>
 
+            <div class="wrapper">
                 <form class="searchBar" action="#">
                     <div class="iconSearch"><i class="fas fa-map-marker-alt"></i></div>
                     <input type="text" placeholder="Marseille, France">
@@ -74,29 +75,27 @@
                         </div>
                         <span class="searchFilterTitle">Animaux autorisés</span>
                     </div>
-                
-                                    
-                    
-                    <div class="searchResult">
-                        <div class="iconSearchResult"><i class="fas fa-info"></i></div>
-                        <p class="searchResultText">Plus de 500 logements sont disponibles dans cette ville</p>
-                    </div>  
                 </div>
+                <div class="searchResult">
+                    <div class="iconSearchResult"><i class="fas fa-info"></i></div>
+                    <p class="searchResultText">Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>  
             </div>    
         </section>
         
         <section class="host">
-            <aside class="wrapperPopular">              
-                <header class="PopularHeader">
-                    <h1 class="PopularTitleHeader">Les plus populaires</h1>
-                </header>   
-            </aside>    
 
             <section class="wrapperHost">
                 <header class="hostHeader">
                     <h1 class="hostTitleHeader">Hébergements à Marseille</h1>
                 </header>  
             </section>
+
+            <aside class="wrapperPopular">              
+                <header class="PopularHeader">
+                    <h1 class="PopularTitleHeader">Les plus populaires</h1>
+                </header>   
+            </aside>    
         </section>
         
 
