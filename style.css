@@ -117,8 +117,8 @@ nav ul li
     background-color: #F2F2F2;
     border-right: none;
     padding: 16px 20px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 form.searchBar input[type=text] 
@@ -146,8 +146,8 @@ form.searchBar input[type=text]
     cursor: pointer;
     border-left: none; /* Prevent double borders */
     border: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;    
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;    
 }
 
  /* filtre search*/
@@ -225,3 +225,52 @@ form.searchBar input[type=text]
     padding-left: 10px;
     font-size: 14px;
  }
+
+/* host */
+.host
+{
+    clear: both;
+    flex-direction: wrap;
+    max-width: 1340px;    
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+ /* Host Popular */
+ .PopularTitleHeader
+ {
+    clear: both;
+    float: left;
+    margin: 1px auto auto 30px;   
+ }
+
+ .wrapperPopular
+ {
+    float: right;
+    width: 420px;
+    height: 600px;    
+    background-color: #F2F2F2 ;
+    border-radius: 15px;
+ }
+
+ /* Host Main */
+ .hostTitleHeader
+{
+    clear: both;
+    float: left;
+    margin: 1px auto auto 30px;  
+}
+
+.wrapperHost
+{
+    float: left;
+    width: 880px;  
+    height: 600px;  
+    background-color: #F2F2F2 ;
+    border-radius: 15px;
+}
+
+
+
