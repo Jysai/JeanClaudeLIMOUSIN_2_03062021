@@ -17,9 +17,9 @@
                 <img class="logo" src="logo\Reservia.png" alt="Reservia">
                 <nav>
                     <ul>
-                        <li><a class="NavLink" href="#" data-active="true">Hébergements</a></li>
-                        <li><a class="NavLink" a href="#activity" data-active="false">Activités</a></li>
-                        <li><a class="Signup" href="#">S'inscrire</a></li>
+                        <li><a class="nav-link" href="#" data-active="true">Hébergements</a></li>
+                        <li><a class="nav-link" a href="#activity" data-active="false">Activités</a></li>
+                        <li><a class="signup" href="#">S'inscrire</a></li>
                     </ul>
                 <nav>               
             </header>
@@ -27,15 +27,15 @@
 
         <section id="search">
             <div class="wrapper">
-                <p class="descriptionHeader">
-                    <h1 class="searchHeaderTitle">Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p class="searchHeaderDescription">En plein centre ville ou en pleine nature</p>
+                <p class="description-header">
+                    <h1 class="search-header-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p class="search-description-header">En plein centre ville ou en pleine nature</p>
                 </p>
             </div>
 
             <div class="wrapper">
-                <form class="searchBar" action="#">
-                    <div class="iconSearch"><i class="fas fa-map-marker-alt"></i></div>
+                <form class="search-bar" action="#">
+                    <div class="icon-search"><i class="fas fa-map-marker-alt"></i></div>
                     <input type="text" placeholder="Marseille, France">
                     <button class="submit">
                         <span class="search">Rechercher</span>
@@ -44,41 +44,41 @@
             </div>
 
             <div class="wrapper">
-                <div class="Filters">
-                    <h2 class="FiltersTitle">Filtres</h2>
+                <div class="filters">
+                    <h2 class="title-filter">Filtres</h2>
 
                 
-                    <div class="searchFilter">
-                        <div class="iconSearchFilter">
+                    <div class="search-filter">
+                        <div class="search-icon-filter">
                             <i class="fas fa-money-bill-wave"></i>
                         </div>
-                        <span class="searchFilterTitle">Économique</span>
+                        <span class="search-title-filter">Économique</span>
                     </div>
             
-                    <div class="searchFilter">
-                        <div class="iconSearchFilter">
+                    <div class="search-filter">
+                        <div class="search-icon-filter">
                             <i class="fas fa-child"></i>
                         </div>
-                        <span class="searchFilterTitle">Familial</span>
+                        <span class="search-title-filter">Familial</span>
                     </div>
             
-                    <div class="searchFilter">
-                        <div class="iconSearchFilter">
+                    <div class="search-filter">
+                        <div class="search-icon-filter">
                             <i class="fas fa-heart"></i>
                         </div>
-                        <span class="searchFilterTitle">Romantique</span>
+                        <span class="search-title-filter">Romantique</span>
                     </div>
             
-                    <div class="searchFilter">
-                        <div class="iconSearchFilter">
+                    <div class="search-filter">
+                        <div class="search-icon-filter">
                             <i class="fas fa-dog"></i>
                         </div>
-                        <span class="searchFilterTitle">Animaux autorisés</span>
+                        <span class="search-title-filter">Animaux autorisés</span>
                     </div>
                 </div>
-                <div class="searchResult">
-                    <div class="iconSearchResult"><i class="fas fa-info"></i></div>
-                    <p class="searchResultText">Plus de 500 logements sont disponibles dans cette ville</p>
+                <div class="search-result">
+                    <div class="search-icon-result"><i class="fas fa-info"></i></div>
+                    <p class="search-text-result">Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>  
             </div>    
         </section>
@@ -96,8 +96,15 @@
                         <figure class="figure-host">
                             <img class="img-figure-host" src="hebergements\3_medium\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt=""></img>
                             <figcaption class="legend-host">
-                                <p class="">légende</p>
-                                
+                                <h3 class="description-legend-host">Auberge la Cannebière</h3>
+                                <p class="description-legend-host">Nuit à partir de <strong class="Price">25€</strong></p>
+                                <p class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </p>    
                             </figcaption>
                         </figure>
                     </article>
@@ -106,8 +113,15 @@
                         <figure class="figure-host">
                             <img class="img-figure-host" src="hebergements\3_medium\fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt=""></img>
                             <figcaption class="legend-host">
-                                <p>légende</p>
-                                
+                                <h3 class="description-legend-host">Hôtel du port</h3>
+                                <p class="description-legend-host">Nuit à partir de <strong class="Price">52€</strong></p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>    
                             </figcaption>                   
                         </figure> 
                     </article>
@@ -116,8 +130,15 @@
                         <figure class="figure-host">
                             <img class="img-figure-host" src="hebergements\3_medium\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt=""></img>
                             <figcaption class="legend-host">
-                                <p>légende</p>
-                                
+                                <h3 class="description-legend-host">Hôtel Les mouettes</h3>
+                                <p class="description-legend-host">Nuit à partir de <strong class="Price">76€</strong></p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>    
                             </figcaption>
                         </figure> 
                     </article>
@@ -126,8 +147,15 @@
                         <figure class="figure-host">
                             <img class="img-figure-host" src="hebergements\3_medium\annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt=""></img>
                             <figcaption class="legend-host">
-                                <p>légende</p>
-                                
+                                <h3 class="description-legend-host">Hôtel de la mer</h3>
+                                <p class="description-legend-host">Nuit à partir de <strong class="Price">46€</strong></p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>    
                             </figcaption>
                         </figure>  
                     </article>
@@ -136,8 +164,15 @@
                         <figure class="figure-host">
                             <img class="img-figure-host" src="hebergements\3_medium\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt=""></img>
                             <figcaption class="legend-host">
-                                <p>légende</p>
-                                
+                                <h3 class="description-legend-host">Auberge le panier</h3>
+                                <p class="description-legend-host">Nuit à partir de <strong class="Price">23€</strong></p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>    
                             </figcaption>
                         </figure> 
                     </article>
@@ -146,7 +181,15 @@
                         <figure class="figure-host">
                             <img class="img-figure-host" src="hebergements\3_medium\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt=""></img>
                             <figcaption class="legend-host">
-                                <p>légende</p>
+                                <h3 class="description-legend-host">Hôtel chez Amina</h3>
+                                <p class="description-legend-host">Nuit à partir de <strong class="Price">96€</strong></p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>    
                             </figcaption>   
                         </figure>   
                     </article>
@@ -161,44 +204,65 @@
 
             <aside class="main-section-popular">
                 <section class="section-popular">
-                <header class="header-popular">
-                    <h1 class="title-header-popular">Les plus populaires</h1>
-                </header>
+                    <header class="header-popular">
+                        <h1 class="title-header-popular">Les plus populaires</h1>
+                    <div class="icon-popular">
+                        <i class ="fas fa-chart-line fa-lg"></i> 
+                    </div>
+                    </header>
 
-                <section class="section-article-popular">   
-                    <article class="article-popular">
-                        <figure class="figure-popular">
-                            <img class="img-figure-popular" src="hebergements\3_medium\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt=""></img>
-                            <figcaption class="legend-popular">
-                                <p class="">légende</p>
-                                
-                            </figcaption>
-                        </figure>
-                    </article>
+                    <section class="section-article-popular">   
+                        <article class="article-popular">
+                            <figure class="figure-popular">
+                                <img class="img-figure-popular" src="hebergements\3_medium\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt=""></img>
+                                <figcaption class="legend-popular">
+                                    <h3 class="description-legend-popular">Hôtel Le soleil du matin</h3>
+                                    <p class="description-legend-popular">Nuit à partir de <strong class="Price">128€</strong></p>
+                                    <div class="rating-popular">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>    
+                                </figcaption>
+                            </figure>
+                        </article>
 
-                    <article class="article-popular">
-                        <figure class="figure-popular">
-                            <img class="img-figure-popular" src="hebergements\3_medium\aw-creative-VGs8z60yT2c-unsplash.jpg" alt=""></img>
-                            <figcaption class="legend-popular">
-                                <p class="">légende</p>
-                                
-                            </figcaption>
-                        </figure>
-                    </article>
+                        <article class="article-popular">
+                            <figure class="figure-popular">
+                                <img class="img-figure-popular" src="hebergements\3_medium\aw-creative-VGs8z60yT2c-unsplash.jpg" alt=""></img>
+                                <figcaption class="legend-popular">
+                                    <h3 class="description-legend-popular">Au coeur de l'eau chambres d'hôtes</h3>
+                                    <p class="description-legend-popular">Nuit à partir de <strong class="Price">71€</strong></p>
+                                    <div class="rating-popular">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>    
+                                </figcaption>
+                            </figure>
+                        </article>
 
-                    <article class="article-popular">
-                        <figure class="figure-popular">
-                            <img class="img-figure-popular" src="hebergements\3_medium\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt=""></img>
-                            <figcaption class="legend-popular">
-                                <p class="">légende</p>
-                                
-                            </figcaption>
-                        </figure>
-                    </article>
-
-
-
-                </section>
+                        <article class="article-popular">
+                            <figure class="figure-popular">
+                                <img class="img-figure-popular" src="hebergements\3_medium\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt=""></img>
+                                <figcaption class="legend-popular">
+                                    <h3 class="description-legend-popular">Hôtel Tout bleu et Blanc</h3>
+                                    <p class="description-legend-popular">Nuit à partir de <strong class="Price">68€</strong></p>
+                                    <div class="rating-popular">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>                                 
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </section>
                 </section>
 
 
