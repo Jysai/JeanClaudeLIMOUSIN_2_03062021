@@ -235,7 +235,7 @@ form.search-bar input[type=text]
 {
     display: flex;
     justify-content:space-between; 
-    max-width: 70%;   
+    max-width: 1340px;   
     margin: 0 auto;    
     padding: 0 0 0 0;    
     flex-wrap: wrap-reverse;     
@@ -244,37 +244,35 @@ form.search-bar input[type=text]
 
 .main-section-host
 {
-    width: 69%;     
+    width: 66%;     
     background-color: #F2F2F2 ;
     border-radius: 15px;      
     margin: none;  
+    padding: 20px;
     min-width:  380px;  
-    margin-bottom: 20px;    
 }
 
 .main-section-popular
 {
-    max-width: 29%; 
-    padding: 0px;
+    max-width: 32%; 
+    min-width: 370px;
     background-color: #F2F2F2 ;
-    margin-bottom: 20px;    
     border-radius: 15px;   
-    min-width:  380px; 
     display: flex;    
     justify-content: space-around;    
 }
 
 .section-article-host
 {
-    padding: 0px;
+    
     display: flex;    
     flex-wrap: wrap;
     justify-content: space-around;
+
 }
 
 .section-article-popular
 {
-    padding: 0px;
    
 }
 
@@ -283,7 +281,7 @@ form.search-bar input[type=text]
 
 {
     display: flex;
-    margin: 10px 0 35px 35px;
+    margin: 30px 0 35px 35px;
     align-content: left;
     text-decoration: none;
     font-weight: bold;
@@ -302,9 +300,20 @@ form.search-bar input[type=text]
     align-content: left;
 }
 
-.header-host, .header-popular
+.header-host
 {
-    margin: 35px 0 0 35px;
+    margin: 10px 0 0 20px;
+}
+
+.header-popular
+{
+    margin: 10px 0 0 40px;
+}
+
+
+.title-header-popular, .title-header-host
+{
+    font-size: 20px;
 }
 
 
@@ -323,7 +332,6 @@ form.search-bar input[type=text]
 {   
     display: flex;
     flex-flow: column;   
-    
     cursor: pointer;   
     margin: 15px;
     padding: 5px;
@@ -347,7 +355,7 @@ form.search-bar input[type=text]
     color:black;
     padding: 3px;
     height: 40%;   
-    
+    flex: 1;
     
     
 }
@@ -355,26 +363,31 @@ form.search-bar input[type=text]
 
 .description-legend-host, .rating
 {
-    margin: 4px 12px 4px 12px;
+    margin: 5px 12px 4px 12px;
 }
+
+.price-description-legend-host
+{
+    margin: 5px 12px 8px 12px;
+    font-size: 14px;
+}
+
+
 
 /*Article Popular*/
 
 .article-popular
 {
-    padding: 1%;    
-    width: 90%;
-    align-content: center;
-    min-width:  380px; 
+    min-width:  350px; 
     
+    margin-bottom: 40px;
 }
 
  
 .icon-popular
 {
-    margin: 20px 35px 0 0;
-    float: right;
-    
+    padding: 30px 30px 0px 0px;
+    float: right;    
 }
 
 .figure-popular
@@ -382,19 +395,20 @@ form.search-bar input[type=text]
     display: flex;
     flex-flow: wrap;   
     cursor: pointer;   
-    margin: 15px;
+    
     padding: 5px;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 16px #0000002e;      
-    height: 130px;
+    height: 145px;
+   
 }
 
 .img-figure-popular
 {    
     object-fit: cover;
-    width: 120px; 
-    height: 120px;
+    width: 130px; 
+    height: 135px;
     border-radius: 15px 0 0 15px;
    
 }
@@ -404,14 +418,17 @@ form.search-bar input[type=text]
     display: flex;
     flex-direction: column;
     flex: 1;
-    
 }
 
 .description-legend-popular 
 {
-    
-    
-    margin: 10px 0px 0px 12px;
+    margin: 12px 0px 4px 21px; 
+}
+
+.price-description-legend-popular
+{
+    margin: 0px 0px 15px 20px;
+    font-size: 14px;   
 }
 
 
@@ -420,7 +437,7 @@ form.search-bar input[type=text]
     color:#0065FC;
     display: flex;
     align-content: start;
-    margin: 20px 0px 0px 12px;
+    margin: 20px 0px 0px 21px;
 }
 
 .rating
