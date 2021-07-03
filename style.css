@@ -467,6 +467,48 @@ form.search-bar input[type=text]
 
 
 
+@media (max-width: 600px) 
+{
+    .body
+    {
+       max-width: 100%;
+    margin: 0%;
+    padding: 0%;
+    }
+
+  .main-section-popular
+  {
+    min-width: 100%;
+  }
+
+  .section-article-popular
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+  }
+
+  .article-popular
+  {
+      max-width: 450px;
+      min-width: 400px;
+      flex: 1;
+  }
+
+
+  .main-section-host
+  {
+    min-width: 100%;
+  }
+  .article-host
+  {
+    max-width: 450px;
+    min-width: 400px;
+    flex: 1;
+  }
+}
+
 
 
 
