@@ -2,14 +2,16 @@
 
 *
 {
+    box-sizing: border-box;
     font-family: 'raleway';
-    font-size: 16px;
+    
+    
 }
 
 body
 {
-    width: 85%;
     margin: 0 auto;
+    width: 80%;   
 }
 
 
@@ -242,12 +244,11 @@ form.search-bar input[type=text]
 
 
 .main-section-host
-{
-    width: 67%;     
+{   
     background-color: #F2F2F2 ;
     border-radius: 15px;      
-    margin-bottom: 2%;  
-    min-width:  380px;  
+    min-width:  380px; 
+    flex: 70%;     
 }
 
 .header-host
@@ -271,18 +272,19 @@ form.search-bar input[type=text]
 
 .article-host
 {
-    padding: 0;    
+    flex-grow: 1;
+    flex-basis: 0;
     min-width: 33%;
 }
 
 
 .figure-host
 {   
+    
     display: flex;
     flex-flow: column;   
     cursor: pointer;   
-    min-width: 80%;
-    padding: 5px;
+    padding: 1%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 16px #0000002e;
@@ -290,18 +292,19 @@ form.search-bar input[type=text]
 }
 
 .img-figure-host
-{    
-    object-fit: cover;
-    height: 60%; 
-    border-radius: 15px 15px 0 0;   
+{   
+    object-fit:cover;
+    min-height:65%; 
+    border-radius: 15px 15px 0 0;  
+    
 }
 
 .legend-host
 {   
     background-color: white;
     color:black;
-    height: 40%;   
-    flex: 1;    
+    min-height: 35%;   
+    
 }
 
 .description-legend-host, .rating
@@ -312,7 +315,7 @@ form.search-bar input[type=text]
 .price-description-legend-host
 {
     margin: 5px 12px 8px 12px;
-    font-size: 14px;
+    
 }
 
 .view-more
@@ -343,15 +346,13 @@ form.search-bar input[type=text]
 
 
 .main-section-popular
-{
-    width: 32%; 
+{   
     min-width: 370px;
     background-color: #F2F2F2 ;
-    border-radius: 15px;   
-    display: flex;    
-    justify-content: space-around; 
+    border-radius: 15px;       
     margin-bottom: 2%; 
-    
+    flex:29%;
+    margin-left: 1%;
 }
 
 .header-popular
@@ -376,7 +377,7 @@ form.search-bar input[type=text]
     display: flex;
     flex-flow: wrap;   
     cursor: pointer;       
-    padding: 5px;
+    padding: 1%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 16px #0000002e;        
@@ -404,7 +405,7 @@ form.search-bar input[type=text]
 
 .price-description-legend-popular
 {
-    font-size: 14px;   
+    
 }
 
 
@@ -423,93 +424,192 @@ form.search-bar input[type=text]
 }
 
 
-@media (max-width: 1400px) 
+
+
+
+
+@media (max-width: 1280px) 
 {
-    .body
-    {
-       max-width: 100%;
-    margin: 0%;
-    padding: 0%;
-    }
-
-  .main-section-popular
-  {
-    min-width: 100%;
-  }
-
-  .section-article-popular
-  {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
-  }
-
-  .article-popular
-  {
-      max-width: 450px;
-      min-width: 400px;
-      flex: 1;
-  }
-
-
-  .main-section-host
-  {
-    min-width: 100%;
-  }
-  .article-host
-  {
-    max-width: 450px;
-    min-width: 400px;
-    flex: 1;
-  }
+    body
+{
+    margin: 0;
+    width: 100%;
 }
-
-
-
-@media (max-width: 600px) 
-{
-    .body
-    {
-       max-width: 100%;
-    margin: 0%;
-    padding: 0%;
-    }
-
-  .main-section-popular
-  {
-    min-width: 100%;
-  }
-
-  .section-article-popular
-  {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
-  }
-
-  .article-popular
-  {
-      max-width: 450px;
-      min-width: 400px;
-      flex: 1;
-  }
-
-
-  .main-section-host
-  {
-    min-width: 100%;
-  }
-  .article-host
-  {
-    max-width: 450px;
-    min-width: 400px;
-    flex: 1;
-  }
 }
 
 
 
 
+@media (max-width: 740px)
+{
+    body
+    {
+        width: 100%;
+    }
+    
+    
+    .main-section-popular
+    {
+        border-radius: 0px;
+    }
+    
+    .main-section-host
+    {
+        background-color: white;
+        
+    }
+    
+    .section-article-host
+    {
+        
+        flex-wrap: column;
+    }
+    
+    .article-host
+    {
+        flex: 100%;
+    }
+    
+    .figure-host
+    {   
+        flex: 100%;
+        height: 300px;
+    
+    }
+    
+    .img-figure-host
+    {   
+        object-fit:cover;
+        min-height: 70%; 
+        
+        
+    }
+    
+    .legend-host
+    {   
+        background-color: white;
+        color:black;
+        min-height: 30%;       
+    }
+    
+    .description-legend-host
+    {
+        font-size: 120%
+    }
+    
+    .price-description-legend-host
+    {
+        font-size: 120%;
+    }
+    
+    
+    .rating
+    {
+        font-size: 100%;
+    }
+    
+    .figure-host
+    {
+        border-radius: 15px;
+    }
+    
+    .img-figure-host
+    {
+        border-radius: 15px 15px 0px 0px;
+    }
+    
+    .legend-host
+    {
+        border-radius: 15px ;
+    }
+    
+    
+    }
+}
+
+@media (max-device-width: 740px)
+{
+    body
+{
+    width: 100%;
+}
+
+
+.main-section-popular
+{
+    border-radius: 0px;
+}
+
+.main-section-host
+{
+    background-color: white;
+    
+}
+
+.section-article-host
+{
+    
+    flex-wrap: column;
+}
+
+.article-host
+{
+    flex: 100%;
+}
+
+.figure-host
+{   
+    flex: 100%;
+    height: 450px;
+
+}
+
+.img-figure-host
+{   
+    object-fit:cover;
+    min-height: 70%; 
+    
+    
+}
+
+.legend-host
+{   
+    background-color: white;
+    color:black;
+    min-height: 30%;       
+}
+
+.description-legend-host
+{
+    font-size: 250%
+}
+
+.price-description-legend-host
+{
+    font-size: 200%;
+}
+
+
+.rating
+{
+    font-size: 250%;
+}
+
+.figure-host
+{
+    border-radius: 50px;
+}
+
+.img-figure-host
+{
+    border-radius: 50px 50px 0px 0px;
+}
+
+.legend-host
+{
+    border-radius: 50px ;
+}
+
+
+}
 
