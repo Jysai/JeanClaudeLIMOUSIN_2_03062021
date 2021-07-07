@@ -2,16 +2,15 @@
 
 *
 {
-    box-sizing: border-box;
+    font-size: 16px;
     font-family: 'raleway';
-    
-    
 }
 
 body
 {
-    margin: 0 auto;
-    width: 80%;   
+    width: 85%;
+    margin:  auto;
+     
 }
 
 
@@ -235,98 +234,121 @@ form.search-bar input[type=text]
 .main-host-and-popular
 {
     display: flex;
-    justify-content:space-between;        
+    justify-content:space-around;        
     flex-wrap: wrap-reverse;     
 }
 
 
-/*Article Host*/
+/* Host */
 
 
 .main-section-host
-{   
+{          
     background-color: #F2F2F2 ;
-    border-radius: 15px;      
+    border-radius: 15px;
+
+    padding: 20px;    
+    
     min-width:  380px; 
-    flex: 70%;     
+    flex: 66%;
 }
 
-.header-host
-{
-    margin: 10px 0 0 40px;
-}
+
+
 
 .title-header-host
 {
     font-size: 20px;
+    margin: 15px;
 }
 
 
 .section-article-host
-{    
+{        
+    
     display: flex;    
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:space-around;
+    
 }
 
+
+/* article-host */
 
 .article-host
 {
     flex-grow: 1;
     flex-basis: 0;
-    min-width: 33%;
+    min-width: 33%;  
 }
 
 
 .figure-host
-{   
-    
+{       
+    margin: 15px 15px 15px 15px ;  
     display: flex;
     flex-flow: column;   
-    cursor: pointer;   
+    cursor: pointer;  
+
+    height: 220px;   
+
+
     padding: 1%;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0 0 16px #0000002e;
-    height: 200px;   
+    box-shadow: 0 0 16px #0000002e;   
 }
 
 .img-figure-host
 {   
     object-fit:cover;
     min-height:65%; 
-    border-radius: 15px 15px 0 0;  
-    
+    border-radius: 15px 15px 0 0;      
 }
 
 .legend-host
 {   
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
     background-color: white;
     color:black;
-    min-height: 35%;   
-    
+    min-height: 35%;  
+    margin-left: 10px;   
+    border-radius: 15px; 
 }
 
 .description-legend-host, .rating
 {
-    margin: 5px 12px 4px 12px;
+    margin: 3px 3px 3px 3px ; 
+    
 }
 
 .price-description-legend-host
 {
-    margin: 5px 12px 8px 12px;
+    margin: 3px 3px 3px 3px ; 
     
 }
 
-.view-more
+.rating
+{    
+    margin: 3px 3px 3px 3px ; 
+    color:#0065FC;
+    display: flex;
+    align-content: start;
+    
+}
 
+/* end article-host */
+
+.view-more
 {
     display: flex;
-    margin: 20px 0 30px 40px;
     align-content: left;
     text-decoration: none;
     font-weight: bold;
     color: black;
+    margin: 15px;
 }
 
 
@@ -339,11 +361,13 @@ form.search-bar input[type=text]
     line-height: normal; 
     max-width: 96px;
     align-content: left;
+    
 }
 
+/* End Host */
 
-/*Article Popular*/
 
+/* Popular */
 
 .main-section-popular
 {   
@@ -351,43 +375,49 @@ form.search-bar input[type=text]
     background-color: #F2F2F2 ;
     border-radius: 15px;       
     margin-bottom: 2%; 
-    flex:29%;
+    flex:30%;
     margin-left: 1%;
 }
 
-.header-popular
-{
-    margin: 10px 0 0 40px;
-}
-
-.title-header-popular
-{
-    font-size: 20px;
-}
 
 .icon-popular
 {
-    padding: 30px 30px 0px 0px;
+    
     float: right;    
 }
 
 
+/*Article Popular*/
+
+
+.article-popular
+{
+    margin: 0 auto;
+    width: 90%;
+    
+}
+
+
+
+
 .figure-popular
 {   
+    margin: 0 auto 30px ;  
     display: flex;
     flex-flow: wrap;   
-    cursor: pointer;       
-    padding: 1%;
+    cursor: pointer;  
     background-color: white;
+    padding: 1%;
     border-radius: 15px;
-    box-shadow: 0 0 16px #0000002e;        
+    box-shadow: 0 0 16px #0000002e;   
+    
 }
 
 .img-figure-popular
 {    
     object-fit: cover;
-    width: 130px; 
-    height: 135px;
+    width: 145px; 
+    height: 150px;
     border-radius: 15px 0 0 15px;
 }
 
@@ -396,46 +426,93 @@ form.search-bar input[type=text]
     display: flex;
     flex-direction: column;
     flex: 1;
+    height: 100%;
+    font-size: 16px;
+   
 }
 
-.description-legend-popular 
+.description-legend-popular
 {
-    
+    margin: 15px 15px 0 15px;
 }
 
 .price-description-legend-popular
 {
-    
+    margin: 5px 15px 0 15px;
 }
-
 
 .rating-popular
 {
+    
     color:#0065FC;
     display: flex;
-    align-content: start;   
+    align-content: start;  
+    margin: 45px 0 0 15px; 
 }
 
-.rating
-{    
-    color:#0065FC;
-    display: flex;
-    align-content: start;
-}
+/* End Article Popular*/
+/* End Popular */
 
 
-
-
-
-
-@media (max-width: 1280px) 
+@media (max-width: 1590px) 
 {
     body
+    {
+       width: 80%;
+       
+    }
+
+
+    .section-article-host
+    {
+        
+        flex-wrap: wrap;
+    }
+    
+    .article-host
+    {
+        flex: 50%;
+    }
+    
+    .figure-host
+    {   
+        flex: 50%;
+        height: 250px;
+    }
+
+
+    .section-article-popular
+    {
+       justify-content: space-around;
+       display: flex;
+       flex-wrap: column;
+    }
+    
+    .article-popular
+    {
+        margin: 10px 10px 10px 10px ;  
+        width:33%;
+    }
+}
+
+@media (max-width: 1375px) 
 {
-    margin: 0;
-    width: 100%;
-}
-}
+
+    .section-article-popular
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .article-popular
+    {
+        width: 90%;
+        margin: 0 ;  
+        padding: 5px;
+    }
+
+  
+ 
 
 
 
@@ -467,29 +544,30 @@ form.search-bar input[type=text]
     
     .article-host
     {
+        margin: 1px 0px 20px 0px ;  
         flex: 100%;
     }
     
     .figure-host
     {   
-        flex: 100%;
-        height: 300px;
+        margin: 0 auto;
+        width: 90%;
+        height: 200px;
     
     }
     
     .img-figure-host
     {   
         object-fit:cover;
-        min-height: 70%; 
-        
-        
+        min-height: 65%; 
+
     }
     
     .legend-host
     {   
         background-color: white;
         color:black;
-        min-height: 30%;       
+        min-height: 35%;       
     }
     
     .description-legend-host
@@ -522,38 +600,41 @@ form.search-bar input[type=text]
     {
         border-radius: 15px ;
     }
-    
-    
-    }
 }
 
-@media (max-device-width: 740px)
+
+
+
+@media (device-width: 740px)
 {
     body
 {
+    margin: 0 auto;
     width: 100%;
 }
 
 
 .main-section-popular
 {
+    margin: 0 auto;
     border-radius: 0px;
 }
 
 .main-section-host
 {
+    margin: 0 auto;
     background-color: white;
-    
 }
 
 .section-article-host
 {
-    
+    margin: 0 auto;
     flex-wrap: column;
 }
 
 .article-host
 {
+    margin: 0 auto;
     flex: 100%;
 }
 
@@ -609,7 +690,18 @@ form.search-bar input[type=text]
 {
     border-radius: 50px ;
 }
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
