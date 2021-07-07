@@ -513,10 +513,6 @@ form.search-bar input[type=text]
 }
   
  
-
-
-
-
 @media (max-width: 740px)
 {
     body
@@ -605,7 +601,11 @@ form.search-bar input[type=text]
 
 
 
-@media (device-width: 740px)
+
+
+
+
+@media (max-device-width: 740px)
 {
     
         body
