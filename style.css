@@ -516,7 +516,7 @@ form.search-bar input[type=text]
     {
        justify-content: space-around;
        display: flex;
-       flex-wrap: column;
+       flex-flow: column;
     }
     
 
@@ -676,7 +676,7 @@ form.search-bar input[type=text]
     .icon-popular
     {
         margin: 40px 40px 0px 0px;
-        size: 100px;
+        
     }
 
 
