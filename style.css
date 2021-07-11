@@ -2,7 +2,7 @@
 
 *
 {
-    font-size: 1em;
+    
     font-family: 'raleway';
 }
 
@@ -57,7 +57,7 @@ nav
     border-top: 3px solid #0065FC;
     margin-right: 65px;
     line-height: 100px;
-    max-width: 1555px;
+    max-width: 97.188em;
 }
 
 
@@ -559,12 +559,10 @@ form.search-bar input[type=text]
 }
 
 
-@media all and (max-width: 453px)
+@media  (max-width: 480px)
+    
 {
-    *
-    {
-        font-size: 1.1em;
-    }
+    
 
         body
     {
@@ -734,7 +732,7 @@ form.search-bar input[type=text]
     .description-legend-popular
     {
         
-       
+    
     }
 
     .price-description-legend-popular
