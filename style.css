@@ -164,7 +164,7 @@ form.search-bar input[type=text]
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 1.875em;
 }
 
 .title-filter
@@ -421,7 +421,7 @@ form.search-bar input[type=text]
 
 .figure-popular
 {   
-    margin: 0 auto 30px ;  
+    margin: 0 auto 1.875em ;  
     display: flex;
     flex-flow: wrap;   
     cursor: pointer;  
@@ -467,7 +467,7 @@ form.search-bar input[type=text]
     display: flex;
     align-content: start;  
     position: absolute;
-    top: 130px;
+    top: 11.875em;
     left: 20px;
 }
 
@@ -705,9 +705,9 @@ form.search-bar input[type=text]
     .figure-popular
     {   
         flex: 100%;
-        height: 200px;
+        height: 15em ;
         margin-bottom: 20px;
-        border-radius: 30px;
+        border-radius: 1.875em;
         
     }
 
@@ -716,7 +716,7 @@ form.search-bar input[type=text]
     {   
         object-fit:cover;
         height: 100%; 
-        border-radius: 30px 0px 0px 30px;
+        border-radius: 1.875em 0em 0em 1.875em;
     }
 
 
@@ -727,19 +727,19 @@ form.search-bar input[type=text]
         background-color: white;
         color:black;
         min-height: 30%;  
-        border-radius: 30px ;     
+        border-radius:  1em ;     
     }
 
 
     .description-legend-popular
     {
-        font-size: 0.8em;
+        font-size: 1em;
        
     }
 
     .price-description-legend-popular
     {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     .rating-popular
@@ -748,7 +748,7 @@ form.search-bar input[type=text]
         display: flex;
         align-content: start;  
         margin: 45px 0 0 15px; 
-        font-size: 0.8em;
+        font-size: 1.5em;
     }
 
     .main-section-host
@@ -759,7 +759,7 @@ form.search-bar input[type=text]
 
     .title-header-host
     {
-        font-size: 0.8em;
+        font-size: 1.5em;
         margin: 40px 0px 0px 40px;
     }
 
@@ -777,9 +777,9 @@ form.search-bar input[type=text]
     .figure-host
     {   
         width: 90%;
-        height: 200px;
+        height: 300px;
         margin-bottom: 20px;
-        border-radius: 30px;
+        border-radius: 1.875em;
     }
 
   
@@ -787,7 +787,7 @@ form.search-bar input[type=text]
     {   
         object-fit:cover;
         min-height: 70%; 
-        border-radius: 30px 30px 0px 0px;
+        border-radius: 1.875em 1.875em 0px 0px;
     }
 
 
@@ -798,30 +798,30 @@ form.search-bar input[type=text]
         background-color: white;
         color:black;
         min-height: 30%;  
-        border-radius: 30px ;     
+        border-radius: 1.875em ;     
     }
 
 
     .description-legend-host
     {
-        font-size: 0.8em;
+        font-size: 1em;
        
     }
 
     .price-description-legend-host
     {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
 
     .rating
     {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     .Price
     {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
 
