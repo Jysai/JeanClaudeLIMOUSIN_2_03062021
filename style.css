@@ -262,29 +262,29 @@ form.search-bar input[type=text]
 
 .article-host
 {
-    flex-grow: 1;
-    flex-basis: 0;
-    min-width: 33%;  
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 5px ;
 }
 
 .figure-host
 {       
-    margin: 15px 15px 15px 15px ;  
+    margin: 0 auto 1.875em ;  
     display: flex;
-    flex-flow: column;   
+    flex-flow: wrap;   
     cursor: pointer;  
-    height: 220px;   
-    padding: 1%;
     background-color: white;
-    border-radius: 15px;
+    padding: 1%;
+    border-radius: 35px;
     box-shadow: 0 0 16px #0000002e;   
 }
 
 .img-figure-host
 {   
-    object-fit:cover;
-    min-height:65%; 
-    border-radius: 15px 15px 0 0;      
+    object-fit: cover;
+    width: 145px; 
+    height: 150px;
+    border-radius: 35px 0 0 35px;   
 }
 
 .legend-host
@@ -350,6 +350,7 @@ form.search-bar input[type=text]
     border-radius: 15px;       
     margin-left: 1%;
     flex:30%;
+    margin-bottom: 2%;
 }
 
 .title-header-popular
@@ -370,7 +371,7 @@ form.search-bar input[type=text]
 {
     margin: 0 auto;
     width: 90%;
-    margin-bottom: 50px ;
+    margin-bottom: 5px ;
 }
 
 .figure-popular
@@ -381,7 +382,7 @@ form.search-bar input[type=text]
     cursor: pointer;  
     background-color: white;
     padding: 1%;
-    border-radius: 15px;
+    border-radius: 35px;
     box-shadow: 0 0 16px #0000002e;    
 }
 
@@ -390,7 +391,7 @@ form.search-bar input[type=text]
     object-fit: cover;
     width: 145px; 
     height: 150px;
-    border-radius: 15px 0 0 15px;
+    border-radius: 35px 0 0 35px;
 }
 
 .legend-popular 
@@ -404,12 +405,13 @@ form.search-bar input[type=text]
 
 .description-legend-popular
 {
-    margin: 10px 15px 0 20px;
+    margin: 5px 15px 0 20px;
 }
 
 .price-description-legend-popular
 {
     margin: 5px 15px 0 20px;
+    font-size: 1em;
 }
 
 .rating-popular
@@ -418,109 +420,211 @@ form.search-bar input[type=text]
     display: flex;
     align-content: start;  
     position: absolute;
-    top: 11.875em;
-    left: 20px;
+    top: 120px;
+    margin-left: 20px;
 }
 
 /* End Article Popular*/
 /* End Popular */
 @media screen and (min-width:1281px) 
 {
-    .price-description-legend-popular
-    {
-        font-size: 1em;
-    }
+    
 
-    .main-section-popular
-    {
-        width: 100%;
-        display: none;
-    }
 }
 
 
 
 @media screen and (min-width:1025px) 
 {
-    .price-description-legend-popular
-    {
-        font-size: 1em;
-    }
-
-    .main-section-popular
-    {
-        width: 100%;
-        display: none;
-    }
+    
+      
 }
 
 
 
-@media screen and (min-width:801px) 
+@media (min-width:801px) 
 {
-    .price-description-legend-popular
-    {
-        font-size: 1em;
-    }
+    
+  
 
-    .main-section-popular
-    {
-        width: 100%;
-        display: none;
-    }
+
 }
 
 
-@media screen and (min-width:600px) 
+@media (min-width:600px) 
 {
-    .price-description-legend-popular
-    {
-        font-size: 1em;
-    }
 
-    .main-section-popular
-    {
-        width: 100%;
-        
-    }
 }
 
 @media screen and (min-width: 480px)
 {
-    .price-description-legend-popular
-    {
-        font-size: 1em;
+    .main-section-host
+    {          
+        background-color: #F2F2F2 ;
+        border-radius: 15px;
+        padding: 20px;    
+        min-width:  380px; 
+        flex: 66%;
     }
+    
+    .title-header-host
+    {
+        margin: 15px;
+    }
+    
+    .section-article-host
+    {        
+        display: flex;    
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+    
+    
+    .article-host
+    {
+        flex-grow: 1;
+        flex-basis: 0;
+        min-width: 33%;  
+    }
+    
+    .figure-host
+    {       
+        margin: 15px 15px 15px 15px ;  
+        display: flex;
+        flex-flow: column;   
+        cursor: pointer;  
+        height: 220px;   
+        padding: 1%;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 0 16px #0000002e;   
+    }
+    
+    .img-figure-host
+    {   
+        object-fit:cover;
+        min-height:65%; 
+        width: 100%;
+        border-radius: 15px 15px 0 0;      
+    }
+    
+    .legend-host
+    {   
+        display: flex;
+        flex-direction: column;
+        flex: 1; 
+        background-color: white;
+        color:black;
+        min-height: 35%;  
+        margin-left: 10px;   
+        border-radius: 15px; 
+        position: relative;
+    }
+    
+    .description-legend-host 
+    {
+        margin: 3px 2px 2px 3px ; 
+    }
+    
+    .price-description-legend-host
+    {
+        margin: 2px 2px 2px 3px ; 
+    }
+    
+    .rating
+    {    
+        margin: 3px 3px 3px 3px ; 
+        color:#0065FC;
+        display: flex;
+        align-content: start;
+    }
+    
+        
+    .view-more
+    {
+        display: flex;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        margin: 35px 0 0 35px;
+    }
+    
+    .view-more:hover 
+    {
+        display: flex;
+        color:#0065FC;
+        padding-bottom: 1px;
+        border-bottom: 3px solid #0065FC;
+        line-height: normal; 
+        max-width: 96px;
+    }
+    
 
     .main-section-popular
     {
+        margin-left: 1%;
         width: 100%;
-       
+    }
+
+    .title-header-popular
+    {
+        font-size: 1em;
+        margin: 50px 0px 50px 50px;
+    }
+
+    .section-article-popular
+    {
+        margin: 0 auto;
+    }
+
+    .article-popular
+    {
+        width: 90%;
+        height: 10%;
+    }
+
+    .figure-popular
+    {
+        border-radius: 15px;
+        height: 150px;
+    }
+
+    .img-figure-popular
+    {
+        margin: 0 auto;
+        width: 40%;
+        height: 150px;
+        border-radius: 15px 0px 0px 15px;
+
+    }
+
+    .description-legend-popular
+    {
+        font-size: 1em;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    .price-description-legend-popular
+    {
+        font-size: 1em;
+        
+        margin-left: 15px;
+    }
+
+    .rating-popular
+    {
+        font-size: 1em;
+        top: 120px;
+        
     }
 }
 
 
 
-@media only screen and (min-width:320px)
+@media (min-width:320px)
 {
-    body
-    {
-        width: 100%;
-        margin: 0;
-    }
-
-    .figure-popular
-
-    .main-section-popular
-    {
-        width: 100%;
-        display: none;
-    }
-
-    .price-description-legend-popular
-    {
-        font-size: 2em;
-    }
+    
 }
 
 
