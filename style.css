@@ -731,13 +731,13 @@ form.search-bar input[type=text]
 
     .description-legend-popular
     {
-        margin: 20px 30px 0 20px;
+        margin: 20px 15px 0 30px;
         font-size: 1.4em;
     }
 
     .price-description-legend-popular
     {
-        margin: 30px 30px 0 30px;
+        margin: 15px 15px 0 30px;
         font-size: 1.4em;
     }
 
@@ -748,6 +748,8 @@ form.search-bar input[type=text]
         align-content: start;  
         margin: 45px 0 0 15px; 
         font-size: 1.4em;
+        position: absolute;
+        top: 180px;
     }
 
     .main-section-host
@@ -1084,7 +1086,7 @@ form.search-bar input[type=text]
 
     .description-legend-popular
     {
-        
+        margin: 20px 0px 20px 20px;
         font-size: 1em;
     }
 
@@ -1099,8 +1101,10 @@ form.search-bar input[type=text]
         color:#0065FC;
         display: flex;
         align-content: start;  
-        margin: 20; 
+        margin: 0px;
         font-size: 1em;
+        position: absolute;
+        top: 180px;
     }
 
     .main-section-host
