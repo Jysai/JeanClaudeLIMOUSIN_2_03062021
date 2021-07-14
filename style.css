@@ -9,7 +9,7 @@
 body
 {
    width: 85%;
-    margin: 0 auto;
+   margin: 0 auto;
 }
 
 
@@ -36,7 +36,6 @@ header
 .logo
 {
     height: 48px; 
-    padding-top: 50px;
 }
 
 #main-nav
@@ -56,7 +55,7 @@ nav
     border-top: 3px solid #0065FC;
     margin-right: 65px;
     line-height: 100px;
-    max-width: 1555px;
+    
 }
 
 
@@ -65,28 +64,28 @@ nav
 {
     text-decoration: none;
     color: #000000;
-    line-height: 112px;
-    margin-right: 65px; 
+    line-height: 106px;
+    margin-right: 65px;
 }
 
 .nav-link-activity:hover 
 {
     color: #0065FC;
     border-top: 3px solid #0065FC;
-    line-height: 106px;
+    line-height: 101px;
 }
 
 .signup
 {
     color: #0065FC;
     font-weight: bold;
-    line-height: 112px; 
+    line-height: 106px;
 }
 
 .signup:hover
 {
     border-top: 3px solid #0065FC;  
-    line-height: 106px;
+    line-height: 101px;
     
 }
 
@@ -118,7 +117,7 @@ nav
 
 .icon-search
 {
-    height: 50px;
+    height: 54px;
     width: 50px;
     background-color: #F2F2F2;
     border-right: none;
@@ -131,21 +130,19 @@ nav
 
 form.search-bar input[type=text] 
 {
-    padding-top: 1px;
-    padding-right: 0%;  
     height: 50px;
-    max-width: 420px;
-    
+    max-width: 420px;  
     border: 1px solid rgb(250, 250, 250);    
     background: #ffffff;
     font-weight: bold;
+    padding-left: 20px;
 }
 
 
 .submit
 {   
-    height: 50px;
-    width: 100px;
+    height: 54px;
+    
     background: #0065FC;
     color: white;
     font-weight: bold;
@@ -154,6 +151,13 @@ form.search-bar input[type=text]
     border: none;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;    
+    padding: 0px 20px 0px 20px;
+}
+
+
+.glass
+{
+    display: none;
 }
 /*barre de recherche*/
 
@@ -168,16 +172,16 @@ form.search-bar input[type=text]
 
 .title-filter
 {
-    padding-right: 35px;
+   
 }
 
  .search-filter
  {
+    margin-left: 15px;
     display: flex;
-    align-items: center;
-    margin-right: 35px;
+    align-items: center; 
     border: 2px solid #d9d9d9;
-    border-radius: 32px;
+    border-radius: 32px; 
     margin-bottom: 16px;
     cursor: pointer;
     font-weight: bold;
@@ -199,8 +203,7 @@ form.search-bar input[type=text]
     min-width: 35px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center; 
  }
  /*Filter search*/
 
@@ -210,10 +213,9 @@ form.search-bar input[type=text]
     display: flex;
     justify-content: left;
     align-items: center;
+    border-radius: 32px;  
     margin-right: 32px;
-    border-radius: 32px;
     margin-bottom: 16px;
-    transition-duration: 0.1s;  
  }
 
 
@@ -233,8 +235,7 @@ form.search-bar input[type=text]
 
  .search-text-result
  {
-    padding-left: 10px;
-    
+    margin-left: 10px;
  }
 
 
@@ -246,8 +247,8 @@ form.search-bar input[type=text]
 #main-host-and-popular
 {
     display: flex;
-    justify-content:space-around;        
-    flex-wrap: wrap-reverse;     
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
 }
 
 
@@ -258,11 +259,9 @@ form.search-bar input[type=text]
 {          
     background-color: #F2F2F2 ;
     border-radius: 15px;
-
-    padding: 20px;    
-    
     min-width:  350px; 
-    flex: 66%;
+    flex: 66%; 
+    margin-right: 1%;
 }
 
 
@@ -270,18 +269,16 @@ form.search-bar input[type=text]
 
 .title-header-host
 {
-    
-    margin: 15px;
+    margin: 40px 0px 0px 40px;
 }
 
 
 .section-article-host
-{        
-    
+{           
     display: flex;    
     flex-wrap: wrap;
-    justify-content:space-around;
-    
+    justify-content:space-around; 
+    padding: 20px 15px 25px 25px;
 }
 
 
@@ -291,7 +288,7 @@ form.search-bar input[type=text]
 {
     flex-grow: 1;
     flex-basis: 0;
-    min-width: 33%;  
+    min-width: 300px; 
 }
 
 
@@ -301,20 +298,18 @@ form.search-bar input[type=text]
     display: flex;
     flex-flow: column;   
     cursor: pointer;  
-
     height: 220px;   
-
     padding: 1%;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0 0 16px #0000002e;   
+    box-shadow: 0 0 16px #0000002e;
 }
 
 .img-figure-host
 {   
     object-fit:cover;
     min-height:65%; 
-    border-radius: 15px 15px 0 0;      
+    border-radius: 15px 15px 0 0;   
 }
 
 .legend-host
@@ -324,30 +319,26 @@ form.search-bar input[type=text]
     flex: 1; 
     background-color: white;
     color:black;
-    min-height: 35%;  
-    margin-left: 10px;   
+    min-height: 35%;     
     border-radius: 15px; 
-    position: relative;
 }
 
 .description-legend-host 
 {
-    margin: 3px 2px 2px 3px ; 
-    
+    margin: 5px 0px 5px 15px;
 }
 
 .price-description-legend-host
 {
-    margin: 2px 2px 2px 3px ; 
-    
+    margin: 0px 0px 5px 15px;
 }
 
 .rating
-{    
-    margin: 3px 3px 3px 3px ; 
+{      
     color:#0065FC;
     display: flex;
     align-content: start;
+    margin: 0px 0px 0px 15px;
 }
 
 /* end article-host */
@@ -355,11 +346,10 @@ form.search-bar input[type=text]
 .view-more
 {
     display: flex;
-    
     text-decoration: none;
     font-weight: bold;
-    color: black;
-    margin: 35px 0 0 35px;
+    color: black; 
+    margin: 10px 15px 25px 45px;
 }
 
 
@@ -367,11 +357,9 @@ form.search-bar input[type=text]
 {
     display: flex;
     color:#0065FC;
-    padding-bottom: 1px;
     border-bottom: 3px solid #0065FC;
     line-height: normal; 
-    max-width: 96px;
-    
+    max-width: 96px;  
 }
 
 /* End Host */
@@ -385,22 +373,22 @@ form.search-bar input[type=text]
     background-color: #F2F2F2 ;
     border-radius: 15px;       
     margin-left: 1%;
-    flex:30%;
-
+    flex: 30%;
+    min-width: 400px; 
+    margin: 0 auto;
 }
 
 
 
 .title-header-popular
 {
-   
-    margin: 35px 0 35px 25px;
+    margin: 40px 0px 0px 40px;
 }
 
 .icon-popular
 {
-    margin: 35px 35px 0px 0px;
-    float: right;    
+    float: right;  
+    margin: 40px 40px 0px 0px;
 }
 
 
@@ -409,18 +397,19 @@ form.search-bar input[type=text]
 
 .article-popular
 {
-    margin: 0 auto;
-    width: 90%;
-    margin-bottom: 50px ;
-   
+   margin-bottom: 40px;
+   min-width: 340px; 
 }
 
-
+.section-article-popular
+ {
+    margin: 40px;
+ }
 
 
 .figure-popular
 {   
-    margin: 0 auto 30px ;  
+    margin: 15px 5px 15px 0px ;  
     display: flex;
     flex-flow: wrap;   
     cursor: pointer;  
@@ -428,7 +417,7 @@ form.search-bar input[type=text]
     padding: 1%;
     border-radius: 15px;
     box-shadow: 0 0 16px #0000002e;   
-    
+    min-width: 300px; 
 }
 
 .img-figure-popular
@@ -445,23 +434,21 @@ form.search-bar input[type=text]
     flex-direction: column;
     flex: 1;
     height: 100%;
-   
     position: relative;
 }
 
 .description-legend-popular
 {
-    margin: 10px 15px 0 20px;
+    margin: 15px 0px 0px 15px;
 }
 
 .price-description-legend-popular
 {
-    margin: 5px 15px 0 20px;
+    margin: 0px 0px 0px 15px;
 }
 
 .rating-popular
 {
-    
     color:#0065FC;
     display: flex;
     align-content: start;  
@@ -474,20 +461,19 @@ form.search-bar input[type=text]
 /* End Popular */
 
 
-
 @media only screen and (max-width:480px)
 {
 
     body
     {
-        flex: 100%;
+       width: 100%;
+        
     }
 
     .logo  
     {
-        height: 50px; 
-        padding: 25px 0 0 0px;
-        padding-bottom: 50px;
+       margin: 20px;
+        
     }
 
 
@@ -495,7 +481,6 @@ form.search-bar input[type=text]
     {
         display: flex;
         flex-wrap: wrap;
-        padding-bottom: 50px;
     }
 
     .logo-signup
@@ -513,118 +498,145 @@ form.search-bar input[type=text]
         position: absolute;
         top: 0px;
         right: 0px;
+        margin-top: 50px;
+        margin-right: 30px;
+        line-height: 20px;
         
     }   
 
     .signup:hover
     {
-        border-top: none;
+        border-top: 0px;
         border-bottom: 3px solid #0065FC;  
+        line-height: 20px;
     }
 
     #main-nav
     {
-       width: 100%;
+     
+      width: 100%;
+      
     }
 
     .nav-link-host
     {
-    width: 50%;
     color: #0065FC;
     border-top: none;
-    border-bottom: 6px solid #0065FC ;
+    border-bottom: 4px solid #0065FC ;
     margin-right: 0px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
+    width: 50%;
+    line-height: 50px;
     }
 
     .nav-link-activity
     {
-        width: 50%;
         color: black;
         border-top: none;
-        border-bottom: 6px solid #f0f0f0 ;
+        border-bottom: 4px solid #f0f0f0 ;
         margin-right: 0px;
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1em;
+        width: 50%;
+        line-height: 50px;
     }
 
     .nav-link-activity:hover 
     {
         color: #0065FC;
         border-top: none;
-        border-bottom: 6px solid #0065FC;
+        border-bottom: 4px solid #0065FC;
+        line-height: 50px;
     }
 
     .search-bar
     {
+        
         display: flex;
         justify-content: start;
-        margin: 0px 0px 0px 40px;
+     
     }
     
     .icon-search
     {
-        height: 50px;
-        width: 50px;
+        margin-left: 20px;
+        width: 54px;
+        height: 54px;
         background-color: #F2F2F2;
         border-right: none;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-top-left-radius: 25px;
-        border-bottom-left-radius: 25px;
+        border-top-left-radius: 11px;
+        border-bottom-left-radius: 11px;
     }
     
     form.search-bar input[type=text] 
     {
-        height: 50px;
-        width: 100%;
-        margin: 0 0 0 0px;
+        height: 48px;
         font-size: 1em;
         justify-content: start;
-        border: 5px solid #F2F2F2;  
+        border: 1px solid #F2F2F2;  
         border-right: none;
         border-left: none;
         background: #ffffff;
         font-weight: bold;
+
     }
     
     .submit
+{  
+    display: none;
+}
+
+.glass
 {   
-    height: 50px;
-    width: 50px;
-    margin: 0 0 0 0px;
+    display: block;
+    height: 54px;
+    width: 54px;
     background: #0065FC;
     color: white;
     font-weight: bold;
     cursor: pointer;
-    border-left: none; 
     border: none;
-    border-radius: 25px;    
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;    
+    padding: 0px 20px 0px 20px;
+}
+
+.search-header-title
+{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.search-description-header
+{
+    margin-left: 20px;
 }
 
 .search-result
 {
-   margin: 0 0 35px 35px;
-   
+    
 }
 
 .search-icon-result
 {
-    margin: 0px 20px 0 0;
+    margin-left: 20px;
 }
 
 .search-text-result
 {
-    font-size: 1.5em;
-    margin: 0;
+    font-size: 0.8em;
+   
 }
 
 .title-filter
 {
     font-size: 1em;
+    margin-left: 20px;
 }
 
 
@@ -632,60 +644,75 @@ form.search-bar input[type=text]
     .title-header-popular
     {
         font-size: 1em;
-        margin: 40px 0px 0px 40px;
-    }
-
-    .main-section-popular
-    {
-        border-radius: 0px;
-        margin: 0 auto;
-        flex: 100%;
     }
 
     .icon-popular
     {
-        margin: 20px 40px 0px 0px;
         size: 100px;
+    }
+
+
+    .main-section-popular
+    {
+        border-radius: 0px;
+        width: 100%;
+        
+        justify-content: space-around;
+    }
+
+    .section-popular
+    {
+        
+     
     }
 
     .section-article-popular
     {
-        margin: 0 auto;
-        width: 100%;
+        
     }
    
+    .article-popular
+    {
+        margin: 0px -5px 5px -5px ;
+    }
+
+    .main-section-host
+    {
+        
+    }
+
+   
+    
    
 
     .main-section-host
     {
         background-color: white;
-        margin: 0 auto;
+       
     }
 
     .title-header-host
     {
         font-size: 1em;
-        margin: 20px 0px 0px 20px;
     }
 
     .section-article-host
     {
         flex-wrap: wrap;
         
+        
     }
 
     .article-host
     {
-        flex: 100%;    
-        
+        margin: 0px -15px -15px -20px ;
     }
 
     .figure-host
     {   
-        width: 100%;
         height: 200px;
         border-radius: 15px;
-        margin: 0 auto;
+      
     }
  
     .img-figure-host
@@ -724,4 +751,3 @@ form.search-bar input[type=text]
     }
 
 }
-
