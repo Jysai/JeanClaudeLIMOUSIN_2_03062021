@@ -8,7 +8,7 @@
 
 body
 {
-   width: 85%;
+   width: 80%;
    margin: 0 auto;
 }
 
@@ -286,8 +286,7 @@ form.search-bar input[type=text]
 
 .article-host
 {
-    flex-grow: 1;
-    flex-basis: 0;
+    flex: 1;
     min-width: 300px; 
 }
 
@@ -460,8 +459,247 @@ form.search-bar input[type=text]
 /* End Article Popular*/
 /* End Popular */
 
+/*Activity */
+.main-section-activity
+{
+   
+   
+}
 
-@media only screen and (max-width:480px)
+.section-article-activity
+{
+    display : none;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: none ;
+    grid-gap: 10px;
+ 
+   
+  }
+  
+     
+  .figure-activity-1, .figure-activity-2, .figure-activity-3, .figure-activity-4,.figure-activity-5, .figure-activity-6 
+  {    
+     
+      margin: 15px 15px 15px 15px ;  
+      display: flex;
+      flex-flow: column;   
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 0 16px #0000002e;
+  }
+
+
+  .article-activity-1
+  {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 4 ;
+   
+  }
+
+  .article-activity-2
+  {
+     grid-column-start: 2;
+    
+  
+  }
+
+  .article-activity-3
+  {
+    grid-column-start: 2;
+    
+    
+  }
+
+  
+.article-activity-4
+  {
+    grid-column-start: 3;
+    
+    grid-row-start: 1 ;
+  }
+
+ 
+.article-activity-5
+  {
+    grid-column-start: 4;
+    
+    grid-row-start: 1;
+    
+  }
+
+  .article-activity-6
+  {
+    grid-column-start: 4;
+    
+    grid-row-start: 2;
+    
+  }
+
+  
+    
+  .img-figure-activity
+  {   
+      object-fit:cover;
+      min-height: 85%;
+      border-radius: 15px 15px 0 0;   
+      
+  }
+  
+  .legend-activity
+  {   
+      display: flex;
+      flex-direction: column;
+      flex: 1; 
+      background-color: white;
+      color:black;
+      min-height: 15%;     
+      border-radius: 15px; 
+  }
+  
+  .description-legend-activity
+  {
+      margin: 5px 0px 5px 15px;
+  }
+
+
+  
+
+
+/* end article-activity */
+
+.main-about
+ {
+     display: flex;
+     
+     background-color:#F2F2F2;
+     flex-wrap: wrap;
+     
+     justify-content: space-between;
+ }
+
+
+ .about-ul
+{
+   
+}
+
+
+@media (max-width: 1550px) 
+{
+    .main-section-popular
+    {
+       
+       
+    }
+
+    .section-article-popular
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    .article-popular
+    {
+        width: 90%;
+        margin: 0 ;  
+        padding: 5px;
+    }
+
+    .img-figure-popular
+    {
+        width: 50%; 
+        height: 150px;
+    }
+
+    .main-section-host
+    {
+        margin: 0;
+    }
+
+    .main-section-host
+{          
+    background-color: #F2F2F2 ;
+    border-radius: 15px;
+    min-width:  350px; 
+    flex: 66%; 
+    margin-right: 0;
+    margin-top: 1%;
+}
+
+
+
+
+
+
+
+.section-article-activity
+{           
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content:space-around; 
+    padding: 20px 15px 25px 25px;
+}
+
+
+/* article-host */
+
+.article-activity-1, .article-activity-2,.article-activity-3,.article-activity-4,.article-activity-5,.article-activity-6
+{
+    flex: 1;
+    min-width: 300px; 
+}
+
+
+.figure-activity-1,.figure-activity-2,.figure-activity-3,.figure-activity-4,.figure-activity-5,.figure-activity-6
+{       
+    margin: 15px 15px 15px 15px ;  
+    display: flex;
+    flex-flow: column;   
+    cursor: pointer;  
+    height: 220px;   
+   
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 16px #0000002e;
+}
+
+.img-figure-activity
+{   
+    object-fit:cover;
+    min-height:80%; 
+    border-radius: 15px 15px 0 0;   
+}
+
+.legend-activity
+{   
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    background-color: white;
+    color:black;
+    min-height: 20%;     
+    border-radius: 15px; 
+}
+
+.description-legend-activity
+{
+    margin: 5px 0px 5px 15px;
+}
+
+.title-header-activity
+{
+    margin-left: 50px ;
+}
+
+}
+
+
+
+
+@media only screen and (max-width:500px)
 {
 
     body
@@ -676,19 +914,14 @@ form.search-bar input[type=text]
         margin: 0px -5px 5px -5px ;
     }
 
-    .main-section-host
-    {
-        
-    }
-
-   
+    
     
    
 
     .main-section-host
     {
-        background-color: white;
-       
+        background-color: white ;
+        
     }
 
     .title-header-host
@@ -750,4 +983,9 @@ form.search-bar input[type=text]
       
     }
 
+    .main-about
+    {
+        flex-flow: column;
+    }
 }
+
