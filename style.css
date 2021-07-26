@@ -30,7 +30,7 @@ header {
 
 .logo {
 	height: 48px;
-	margin-top: 20px;
+	margin: 20px 0px 40px 0px;
 }
 
 #main-nav {
@@ -78,9 +78,6 @@ nav {
 	flex-wrap: wrap;
 }
 
-.search-header-title {
-}
-
 .search-description-header {
 	font-weight: normal;
 }
@@ -115,12 +112,11 @@ form.search-bar input[type="text"] {
 
 .submit {
 	height: 54px;
-
 	background: #0065fc;
 	color: white;
 	font-weight: bold;
 	cursor: pointer;
-	border-left: none; /* Prevent double borders */
+	border-left: none;
 	border: none;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
@@ -402,18 +398,10 @@ form.search-bar input[type="text"] {
 
 .figure-port,
 .figure-calanques {
-	margin: 15px 15px 15px 15px;
-	display: flex;
-	flex-flow: column;
-	cursor: pointer;
 	height: 450px;
-	background-color: white;
-	border-radius: 15px;
-	box-shadow: 0 0 16px #0000002e;
 }
 
-.figure-frioul,
-.figure-pomegues {
+.figure-activity {
 	margin: 15px 15px 15px 15px;
 	display: flex;
 	flex-flow: column;
@@ -434,55 +422,35 @@ form.search-bar input[type="text"] {
 
 .figure-dame,
 .figure-longchamp {
-	margin: 15px 15px 15px 15px;
-	display: flex;
-	flex-flow: column;
-	cursor: pointer;
 	height: 200px;
-	background-color: white;
-	border-radius: 15px;
-	box-shadow: 0 0 16px #0000002e;
 }
 
 .figure-dame {
 	margin-bottom: 50px;
 }
 
-.img-figure-port,
-.img-figure-calanques {
+.img-figure-activity {
 	object-fit: cover;
-	height: 400px;
 	border-radius: 15px 15px 0 0;
 	width: 100%;
+}
+
+.img-figure-port,
+.img-figure-calanques {
+	height: 400px;
 }
 
 .img-figure-pomegues {
-	object-fit: cover;
 	height: 200px;
-	border-radius: 15px 15px 0 0;
-	width: 100%;
 }
 
 .img-figure-frioul {
-	object-fit: cover;
 	height: 100px;
-	border-radius: 15px 15px 0 0;
-	width: 100%;
-}
-
-.img-figure-calanques {
-	object-fit: cover;
-
-	border-radius: 15px 15px 0 0;
-	width: 100%;
 }
 
 .img-figure-dame,
 .img-figure-longchamp {
-	object-fit: cover;
 	height: 150px;
-	border-radius: 15px 15px 0 0;
-	width: 100%;
 }
 
 .legend-activity {
@@ -492,7 +460,6 @@ form.search-bar input[type="text"] {
 	background-color: white;
 	color: black;
 	height: 50px;
-
 	border-radius: 15px;
 }
 
@@ -507,10 +474,8 @@ form.search-bar input[type="text"] {
 
 .main-about {
 	display: flex;
-
 	background-color: #f2f2f2;
 	flex-wrap: wrap;
-
 	justify-content: space-between;
 	padding-right: 350px;
 	flex: 1;
@@ -538,8 +503,6 @@ form.search-bar input[type="text"] {
 
 @media (max-width: 1550px) {
 	.main-section-popular {
-		background-color: #f2f2f2;
-		border-radius: 15px;
 		min-width: 350px;
 		flex: 100%;
 		margin-right: 0;
@@ -564,14 +527,8 @@ form.search-bar input[type="text"] {
 	}
 
 	.main-section-host {
-		margin: 0;
-	}
-
-	.main-section-host {
-		background-color: #f2f2f2;
-		border-radius: 15px;
-		min-width: 350px;
 		width: 100%;
+		margin: 0;
 		margin-right: 0;
 		margin-top: 1%;
 		padding-bottom: 20px;
@@ -590,7 +547,6 @@ form.search-bar input[type="text"] {
 	}
 
 	.main-section-activity {
-		border-radius: 15px;
 		min-width: 350px;
 		flex: 100%;
 	}
@@ -602,7 +558,6 @@ form.search-bar input[type="text"] {
 	.section-article-activity {
 		justify-content: center;
 		justify-content: space-around;
-		margin-bottom: 30px;
 	}
 
 	.article-activity {
@@ -614,8 +569,6 @@ form.search-bar input[type="text"] {
 	}
 
 	.main-about {
-		display: flex;
-		justify-content: space-between;
 		padding-right: 30px;
 	}
 }
@@ -636,7 +589,7 @@ form.search-bar input[type="text"] {
 	}
 
 	.logo {
-		margin: 15px 0px 0px 40px;
+		margin: 20px 0px 0px 40px;
 	}
 
 	.signup {
@@ -699,14 +652,12 @@ form.search-bar input[type="text"] {
 	.section-article-activity {
 		width: 100%;
 		margin: 0 auto;
-		margin-bottom: 30px;
 	}
 
 	.article-activity {
 		margin: 0 auto;
 		min-width: 0px;
 		width: 75%;
-		height: none;
 	}
 
 	.article-frioul,
@@ -718,8 +669,6 @@ form.search-bar input[type="text"] {
 	.activity-5-6 {
 		margin: 0 auto;
 		width: 100%;
-
-		height: none;
 		align-content: center;
 	}
 
@@ -771,10 +720,6 @@ form.search-bar input[type="text"] {
 		padding: 0px;
 	}
 
-	.logo {
-		margin: 20px;
-	}
-
 	#search {
 		margin-left: 5px;
 	}
@@ -782,59 +727,6 @@ form.search-bar input[type="text"] {
 	header {
 		display: flex;
 		flex-wrap: wrap;
-	}
-
-	.signup {
-		font-weight: bold;
-		font-size: 1em;
-		color: #0065fc;
-		font-weight: bold;
-		position: absolute;
-		top: 0px;
-		right: 0px;
-		margin-top: 50px;
-		margin-right: 30px;
-		line-height: 20px;
-	}
-
-	.signup:hover {
-		border-top: 0px;
-		border-bottom: 3px solid #0065fc;
-		line-height: 20px;
-	}
-
-	#main-nav {
-		width: 100%;
-	}
-
-	.nav-link-host {
-		color: #0065fc;
-		border-top: none;
-		border-bottom: 4px solid #0065fc;
-		margin-right: 0px;
-		text-align: center;
-		font-size: 1em;
-		font-weight: bold;
-		width: 50%;
-		line-height: 50px;
-	}
-
-	.nav-link-activity {
-		color: black;
-		border-top: none;
-		border-bottom: 4px solid #f0f0f0;
-		margin-right: 0px;
-		text-align: center;
-		font-size: 1em;
-		width: 50%;
-		line-height: 50px;
-	}
-
-	.nav-link-activity:hover {
-		color: #0065fc;
-		border-top: none;
-		border-bottom: 4px solid #0065fc;
-		line-height: 50px;
 	}
 
 	.search-bar {
@@ -845,12 +737,6 @@ form.search-bar input[type="text"] {
 	.icon-search {
 		margin-left: 20px;
 		width: 54px;
-		height: 54px;
-		background-color: #f2f2f2;
-		border-right: none;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		border-top-left-radius: 11px;
 		border-bottom-left-radius: 11px;
 	}
@@ -859,7 +745,7 @@ form.search-bar input[type="text"] {
 		height: 48px;
 		font-size: 1em;
 		justify-content: start;
-		border: 1px solid #f2f2f2;
+
 		border-right: none;
 		border-left: none;
 		background: #ffffff;
@@ -906,20 +792,14 @@ form.search-bar input[type="text"] {
 		margin-left: 20px;
 	}
 
-	.title-header-popular {
-		font-size: 1em;
-		margin: 20px 10px -200px 20px;
-	}
-
-	.icon-popular {
-		size: 100px;
-	}
-
 	.main-section-popular {
 		border-radius: 0px;
 		width: 100%;
-
 		justify-content: space-around;
+	}
+
+	.title-header-popular {
+		margin-left: 15px;
 	}
 
 	.article-popular {
@@ -937,12 +817,10 @@ form.search-bar input[type="text"] {
 	}
 
 	.title-header-host {
-		font-size: 1em;
-		margin: 20px 10px -10px 20px;
+		margin-left: 15px;
 	}
 
 	.section-article-host {
-		flex-wrap: wrap;
 		margin: 0px;
 	}
 
@@ -963,14 +841,8 @@ form.search-bar input[type="text"] {
 	}
 
 	.legend-host {
-		background-color: white;
-		color: black;
 		min-height: 32%;
 		border-radius: 30px;
-	}
-
-	.main-section-activity {
-		margin: 0 auto;
 	}
 
 	.section-article-activity {
@@ -980,28 +852,16 @@ form.search-bar input[type="text"] {
 	}
 
 	.title-header-activity {
-		margin: 20px 0px 10px 20px;
+		margin-left: 15px;
 	}
 
 	.article-activity {
-		margin: 0 auto;
-		min-width: 0px;
 		width: 100%;
-		height: none;
 	}
 
 	.article-frioul,
 	.article-longchamp {
 		margin-top: -25px;
-	}
-
-	.activity-2-3,
-	.activity-5-6 {
-		margin: 0 auto;
-		width: 100%;
-
-		height: none;
-		align-content: center;
 	}
 
 	.figure-activity {
@@ -1012,17 +872,10 @@ form.search-bar input[type="text"] {
 		height: 150px;
 	}
 
-	.legend-activity {
-		height: 50px;
-	}
-
 	.description-legend-activity {
 		display: flex;
 		margin-top: 10px;
 		justify-content: start;
-	}
-
-	.main-about {
 	}
 
 	.about-a {
