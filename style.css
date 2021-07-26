@@ -89,6 +89,10 @@ nav {
 	justify-content: start;
 }
 
+.search-header-title {
+	font-size: 1.3em;
+}
+
 .icon-search {
 	height: 54px;
 	width: 50px;
@@ -217,6 +221,7 @@ form.search-bar input[type="text"] {
 
 .title-header-host {
 	margin: 40px 0px 0px 40px;
+	font-size: 1.1em;
 }
 
 .section-article-host {
@@ -309,6 +314,7 @@ form.search-bar input[type="text"] {
 
 .title-header-popular {
 	margin: 40px 0px 0px 40px;
+	font-size: 1.1em;
 }
 
 .icon-popular {
@@ -382,6 +388,7 @@ form.search-bar input[type="text"] {
 
 .title-header-activity {
 	margin: 50px 0px 10px 10px;
+	font-size: 1.1em;
 }
 
 .section-article-activity {
