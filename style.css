@@ -275,10 +275,25 @@ form.search-bar input[type="text"] {
 }
 
 .rating {
-	color: #0065fc;
 	display: flex;
 	align-content: start;
-	margin: 0px 0px 0px 15px;
+	position: relative;
+	bottom: 14px;
+	left: 15px;
+}
+
+.y-rating {
+	color: #0065fc;
+	display: inline-block;
+	vertical-align: top;
+	display: flex;
+}
+
+.n-rating {
+	color: #d0d0d0;
+	display: inline-block;
+	vertical-align: top;
+	display: flex;
 }
 
 /* end article-host */
@@ -373,7 +388,7 @@ form.search-bar input[type="text"] {
 	display: flex;
 	align-content: start;
 	position: absolute;
-	top: 130px;
+	top: 115px;
 	left: 20px;
 }
 
